@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-function Bottombar() {
+export const Bottombar = () => {
   const pathname = usePathname();
 
   return (
@@ -43,6 +43,6 @@ function Bottombar() {
       </div>
     </section>
   );
-}
+};
 
 export default Bottombar;
